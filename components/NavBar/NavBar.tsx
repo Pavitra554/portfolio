@@ -6,6 +6,7 @@ import NavLink from './NavLink';
 
 //Redux
 import { useDispatch } from 'react-redux';
+
 import {  toggle } from '../../reducers/ThemeSlice';
 
 const NAV_DATA = [
