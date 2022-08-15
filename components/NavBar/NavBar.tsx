@@ -4,11 +4,6 @@ import Link from 'next/link';
 //Components
 import NavLink from './NavLink';
 
-//Redux
-import { useDispatch } from 'react-redux';
-
-import {  toggle } from '../../reducers/ThemeSlice';
-
 const NAV_DATA = [
     {
         href:'/',
@@ -24,7 +19,6 @@ const NAV_DATA = [
     },
 ]
 const NavBar = () => {
-    const dispatch = useDispatch();
   return (
     <div className='flex w-full dark:bg-slate-700 justify-center p-2 border-b'>
         <nav className='w-full max-w-5xl flex flex-row justify-between items-center'>
@@ -36,7 +30,7 @@ const NavBar = () => {
                })}
             </div>
             <div>
-                <button onClick={()=>dispatch(toggle())}>dark</button>
+                <button>dark</button>
             </div>
         </nav>
     </div>
