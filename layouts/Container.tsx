@@ -15,9 +15,11 @@ const Container = ({children}:any) => {
         <title>Pavitra.js</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar/>
-      {children}
-    
+      <main className='dark:bg-neutral-900 bg-white'>
+        <NavBar/>
+        {children}
+
+      </main>
     </div>
   )
 }
