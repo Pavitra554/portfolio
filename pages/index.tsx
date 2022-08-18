@@ -5,7 +5,7 @@ import Container from '../layouts/Container'
 const Home: NextPage = () => {
   return (
     <Container>
-      <div className='w-full h-screen bg-blue-200 dark:bg-blue-600 ease-linear duration-150'>Home</div>
+      <div className='w-full h-screen dark:bg-neutral-900 bg-blue-600 ease-linear duration-150'>Home</div>
     </Container>
   )
 }
