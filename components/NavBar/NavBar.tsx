@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 //Components
 import NavLink from "./NavLink";
+import MobileNav from "../MobileNav/MobileNav";
 
 //icons
 import { MoonIcon, SunIcon, MenuAlt4Icon } from "@heroicons/react/outline";
@@ -14,20 +15,9 @@ import { MoonIcon, SunIcon, MenuAlt4Icon } from "@heroicons/react/outline";
 import { useDispatch, useSelector } from "react-redux";
 import { selectTheme, toggle } from "../../reducers/themeSlice";
 
-const NAV_DATA = [
-  {
-    href: "/",
-    name: "Home",
-  },
-  {
-    href: "/Projects",
-    name: "Projects",
-  },
-  {
-    href: "/Achivements",
-    name: "Achivements",
-  },
-];
+//Data
+import { NAV_DATA } from "../../data/navlinks";
+
 const NavBar = () => {
   const value = useSelector(selectTheme);
   const dispatch = useDispatch();
@@ -39,9 +29,7 @@ const NavBar = () => {
       className='flex w-full bg-neutral-100 dark:bg-neutral-900 justify-center p-2 dark:text-neutral-400 text-neutral-900 ease-linear  duration-150 shadow-xl sticky top-0'
     >
       <nav className='w-full max-w-5xl flex flex-row justify-between items-center'>
-        <div className='flex md:hidden'>
-          <MenuAlt4Icon className='h-6 w-6 ' />
-        </div>
+        <MobileNav/>
         <div className=' flex-row hidden md:flex'>
           {NAV_DATA.map((e, i) => {
             return <NavLink key={i} name={e.name} link={e.href} />;
