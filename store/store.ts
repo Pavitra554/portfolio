@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
+import navToggleSlice from '../reducers/navToggleSlice';
 import themeSlice from '../reducers/themeSlice';
 
 export const store = configureStore({
   reducer: {
     themeMode:themeSlice,
+    navToggle:navToggleSlice,
   },
 })
 
