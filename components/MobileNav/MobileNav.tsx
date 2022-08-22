@@ -41,7 +41,7 @@ const MobileNav = () => {
           >
             <div className='h-full mx-5 mt-12 flex flex-col'>
               {NAV_DATA.map((e, i) => {
-                return <MobileNavLink key={i} name={e.name} link={e.href} />;
+                return <MobileNavLink key={i} i={i} name={e.name} link={e.href} />;
               })}
             </div>
           </motion.div>

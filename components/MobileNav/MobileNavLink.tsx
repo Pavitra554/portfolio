@@ -11,26 +11,27 @@ import { selectNavOpen, togglenav } from "../../reducers/navToggleSlice";
 type props = {
   name: string;
   link: string;
+  i:number
 };
 
-const MobileNavLink: React.FC<props> = ({ link, name }) => {
+const MobileNavLink: React.FC<props> = ({ link, name,i }) => {
   const value = useSelector(selectNavOpen);
   const dispatch = useDispatch();
   return (
     <Link href={link} className='cursor-pointer'>
-      <div
+      <motion.div
+        initial={{opacity:0,y:50}}
+        animate={{opacity:1,y:0}}
+        transition={{delay:0.4+( i/10),duration:0.3}}
         className='py-4 m-1 border-b border-neutral-300  dark:border-neutral-500'
         onClick={() => dispatch(togglenav())}
       >
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          transition={{ duration: 0.1 }}
-          className='text-lg font-normal text-neutral-800 dark:text-neutral-200  rounded-lg cursor-pointer '
+        <a
+          className='text-lg font-normal text-neutral-800 dark:text-neutral-300  rounded-lg cursor-pointer '
         >
           {name}
-        </motion.a>
-      </div>
+        </a>
+      </motion.div>
     </Link>
   );
 };
