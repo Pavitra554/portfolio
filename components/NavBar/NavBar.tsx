@@ -30,7 +30,7 @@ const NavBar = () => {
     >
       <nav className='w-full max-w-5xl flex flex-row justify-between items-center'>
         <MobileNav/>
-        <div className=' flex-row hidden md:flex'>
+        <div className=' flex-row hidden sm:flex'>
           {NAV_DATA.map((e, i) => {
             return <NavLink key={i} name={e.name} link={e.href} />;
           })}

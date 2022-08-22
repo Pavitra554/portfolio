@@ -20,7 +20,7 @@ const MobileNav = () => {
   const value = useSelector(selectNavOpen);
   const dispatch = useDispatch();
   return (
-    <div className='w-full flex md:hidden '>
+    <div className='w-full flex sm:hidden '>
       <button onClick={() => dispatch(togglenav())} className='ml-2'>
         <MenuAlt4Icon className='h-6 w-6 ' />
       </button>
