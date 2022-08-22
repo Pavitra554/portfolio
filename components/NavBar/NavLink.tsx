@@ -15,8 +15,8 @@ const NavLink:React.FC<props> = ({link,name}) => {
         <motion.a 
           whileHover={{scale:1.1}}
           whileTap={{scale:0.9}}
-          transition={{duration:0.3}}
-          className='text-lg font-medium py-1 px-2 m-1 hover:bg-neutral-100 dark:hover:bg-neutral-700 text-neutral-600 dark:text-neutral-400 dark:hover:text-neutral-200 hover:text-neutral-800   rounded-lg cursor-pointer ease-linear duration-100'>
+          transition={{duration:0.1}}
+          className='text-lg font-medium py-1 px-2 m-1 hover:bg-neutral-200 dark:hover:bg-neutral-800 text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-300 hover:text-neutral-800   rounded-lg cursor-pointer ease-linear duration-100'>
             {name}
         </motion.a>
     </Link>
