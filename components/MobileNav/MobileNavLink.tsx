@@ -23,11 +23,11 @@ const MobileNavLink: React.FC<props> = ({ link, name,i }) => {
         initial={{opacity:0,y:50}}
         animate={{opacity:1,y:0}}
         transition={{delay:0.4+( i/10),duration:0.3}}
-        className='py-4 m-1 border-b border-neutral-300  dark:border-neutral-500'
+        className='py-4 m-1 border-b border-neutral-300  dark:border-neutral-700'
         onClick={() => dispatch(togglenav())}
       >
         <a
-          className='text-lg font-normal text-neutral-800 dark:text-neutral-300  rounded-lg cursor-pointer '
+          className='text-lg font-normal text-neutral-800 dark:text-neutral-400  rounded-lg cursor-pointer '
         >
           {name}
         </a>
