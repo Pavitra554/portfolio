@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 //Components
 
 //icons
-import { MoonIcon, SunIcon, MenuAlt4Icon } from "@heroicons/react/outline";
+import { MoonIcon, SunIcon, MenuAlt4Icon,XIcon } from "@heroicons/react/outline";
 
 //Redux
 import { useDispatch, useSelector } from "react-redux";
@@ -21,8 +21,8 @@ const MobileNav = () => {
   const dispatch = useDispatch();
   return (
     <div className='w-full flex sm:hidden '>
-      <button onClick={() => dispatch(togglenav())} className='ml-2'>
-        <MenuAlt4Icon className='h-6 w-6 ' />
+      <button onClick={() => dispatch(togglenav())} className='ml-2 z-50'>
+        {value?<XIcon className='h-6 w-6 ' />:<MenuAlt4Icon className='h-6 w-6 ' />}
       </button>
       {value && (
         <>
