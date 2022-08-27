@@ -26,7 +26,7 @@ const NavBar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 120 }}
-      className='flex w-full bg-neutral-100 dark:bg-neutral-900 justify-center p-2 dark:text-neutral-400 text-neutral-900 ease-linear  duration-150 shadow-xl sticky top-0'
+      className='flex w-full bg-neutral-100 dark:bg-neutral-900 justify-center p-2 dark:text-neutral-400 text-neutral-900 ease-linear  duration-150 shadow-xl fixed top-0'
     >
       <nav className='w-full max-w-5xl flex flex-row justify-between items-center'>
         <MobileNav/>
