@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 //Framer Motion
 import { motion } from "framer-motion";
@@ -26,10 +25,10 @@ const NavBar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 120 }}
-      className='flex w-full bg-neutral-100 dark:bg-neutral-900 justify-center p-2 dark:text-neutral-400 text-neutral-900 ease-linear  duration-150 shadow-xl fixed top-0'
+      className='flex w-full bg-white/30 dark:bg-black/25  justify-center p-2 dark:text-neutral-400 text-neutral-900 ease-linear  duration-150 shadow-xl fixed top-0 z-40'
     >
       <nav className='w-full max-w-5xl flex flex-row justify-between items-center'>
-        <MobileNav/>
+        <MobileNav />
         <div className=' flex-row hidden sm:flex'>
           {NAV_DATA.map((e, i) => {
             return <NavLink key={i} name={e.name} link={e.href} />;
@@ -37,11 +36,11 @@ const NavBar = () => {
         </div>
         <div>
           <motion.button
-            whileHover={{scale:1.1}}
-            whileTap={{scale:0.7}}
-            transition={{duration:0.2}}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.7 }}
+            transition={{ duration: 0.2 }}
             onClick={() => dispatch(toggle())}
-            className='py-2 px-2 m-1 bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 hover:bg-neutral-300 rounded-lg text-neutral-500 dark:text-neutral-500 hover:text-neutral-800 dark:hover:text-neutral-200 ease-linear duration-100'
+            className='py-2 px-2 m-1 bg-white/60 dark:bg-black/30 dark:hover:bg-black/50 hover:bg-white/90 rounded-lg text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-50 ease-linear duration-100'
           >
             {value ? (
               <SunIcon className='h-6 w-6 ' />
