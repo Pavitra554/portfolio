@@ -25,7 +25,7 @@ const NavBar = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 120 }}
-      className='flex w-full bg-white/30 dark:bg-black/25  justify-center p-2 dark:text-neutral-400 text-neutral-900 ease-linear  duration-150 shadow-xl fixed top-0 z-40'
+      className={styles.mainNav}
     >
       <nav className='w-full max-w-5xl flex flex-row justify-between items-center'>
         <MobileNav />
@@ -40,7 +40,7 @@ const NavBar = () => {
             whileTap={{ scale: 0.7 }}
             transition={{ duration: 0.2 }}
             onClick={() => dispatch(toggle())}
-            className='py-2 px-2 m-1 bg-white/60 dark:bg-black/30 dark:hover:bg-black/50 hover:bg-white/90 rounded-lg text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-50 ease-linear duration-100'
+            className={styles.darkModeButton}
           >
             {value ? (
               <SunIcon className='h-6 w-6 ' />
@@ -52,6 +52,11 @@ const NavBar = () => {
       </nav>
     </motion.div>
   );
+};
+
+const styles = {
+  mainNav: `flex w-full bg-white/30 dark:bg-black/25  justify-center p-2 dark:text-neutral-400 text-neutral-900 ease-linear  duration-150 shadow-xl fixed top-0 z-40 border-b dark:border-white/10 border-black/20`,
+  darkModeButton: `py-2 px-2 m-1 border border-black/10 dark:border-white/10 dark:hover:bg-white/10 hover:bg-black/10 rounded-lg text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-50 ease-linear duration-100`,
 };
 
 export default NavBar;
