@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 const Home: NextPage = () => {
   return (
     <Container>
-      <div className='dark:bg-neutral-900 bg-white w-screen flex flex-col ease-linear duration-150 text-5xl dark:text-white'>
+      <div className='dark:bg-black bg-white w-screen flex flex-col ease-linear duration-150 text-5xl dark:text-white'>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 0.2 }}
