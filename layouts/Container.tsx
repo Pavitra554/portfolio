@@ -1,27 +1,27 @@
-import React from 'react';
-import Head from 'next/head';
-import NavBar from '../components/NavBar/NavBar'
+import React from "react";
+import Head from "next/head";
+import NavBar from "../components/NavBar/NavBar";
 
 //Redux
-import { useSelector } from 'react-redux';
-import { selectTheme } from '../reducers/themeSlice';
+import { useSelector } from "react-redux";
+import { selectTheme } from "../reducers/themeSlice";
+import { motion } from "framer-motion";
+import Footer from "../components/Footer/Footer";
 
-const Container = ({children}:any) => {
+const Container = ({ children }: any) => {
   const value = useSelector(selectTheme);
 
   return (
-    <div className={`container ${value?'dark':''} `}>
+    <div className={` ${value ? "dark" : ""} `}>
       <Head>
         <title>Pavitra.js</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className='dark:bg-black bg-white ease-linear duration-150'>
-        <NavBar/>
-        {children}
-
-      </main>
+      <NavBar />
+      {children}
+      {/* <Footer/> */}
     </div>
-  )
-}
+  );
+};
 
-export default Container
+export default Container;
