@@ -25,7 +25,7 @@ const NavLink:React.FC<props> = ({link,name}) => {
   )
 }
 const styles ={
-  navLink: `text-lg font-medium py-1 px-2 m-1 hover:bg-black/10  dark:hover:bg-white/10 text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-50 hover:text-neutral-800   rounded-lg cursor-pointer ease-linear duration-100`
+  navLink: `text-lg select-none font-medium py-1 px-2 m-1 hover:bg-black/10  dark:hover:bg-white/10 text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-50 hover:text-neutral-800   rounded-lg cursor-pointer ease-linear duration-100`
 };
 
 
