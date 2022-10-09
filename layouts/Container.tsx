@@ -12,9 +12,9 @@ const Container = ({ children }: any) => {
   const value = useSelector(selectTheme);
 
   return (
-    <div className={` ${value ? "dark" : ""} `}>
+    <div className={``}>
       <Head>
-        <title>Pavitra.js</title>
+        <title>Pavitra⚡</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <NavBar />
