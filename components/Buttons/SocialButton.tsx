@@ -1,0 +1,62 @@
+import React from "react";
+import Link from "next/link";
+
+//Framer Motion
+import { AnimatePresence, useAnimation, motion } from "framer-motion";
+
+//React Icons
+import { SiLeetcode,SiGithub,SiLinkedin,SiTwitter,SiInstagram} from "react-icons/si";
+
+type props = {
+  link: string;
+  name: string;
+};
+
+const SocialButton: React.FC<props> = ({ link, name }) => {
+  const [isHovered, setIsHovered] = React.useState(false);
+  const controls = useAnimation();
+  function handleMouseEnter() {
+    setIsHovered(true);
+    controls.start("hover");
+  }
+
+  function handleMouseLeave() {
+    setIsHovered(false);
+    controls.start("initial");
+  }
+  return (
+    <Link href={link}>
+      <motion.div
+        layout
+        onMouseEnter={() => handleMouseEnter()}
+        onMouseLeave={() => handleMouseLeave()}
+      >
+        <motion.div className='flex flex-row items-center p-2 rounded-md bg-neutral-800/60 text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto'>
+          <motion.div layout>
+            { name === 'Leetcode' && <SiLeetcode size={20} /> }
+            { name === 'Github' && <SiGithub size={20} /> }
+            { name === 'LinkedIn' && <SiLinkedin size={20} /> }
+            { name === 'Twitter' && <SiTwitter size={20} /> }
+            { name === 'Instagram' && <SiInstagram size={20} /> }
+          </motion.div>
+          <AnimatePresence>
+            {isHovered && (
+              <motion.div
+                layout
+                initial={{ y: 10, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -10, opacity: 0 }}
+                transition={{ duration: 0.08, delay: 0.299 }}
+                className='font-semibold text-sm pl-1.5 '
+              >
+                {name}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
+      </motion.div>
+    </Link>
+  );
+};
+
+export default SocialButton;
