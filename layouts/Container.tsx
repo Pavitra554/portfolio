@@ -19,7 +19,7 @@ const Container = ({ children }: any) => {
       </Head>
       <NavBar />
       {children}
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };

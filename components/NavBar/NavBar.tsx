@@ -4,29 +4,17 @@ import React from "react";
 import { AnimateSharedLayout, motion } from "framer-motion";
 
 //Components
-import NavLink from "./NavLink";
-import MobileNav from "../MobileNav/MobileNav";
 import SocialButton from "../Buttons/SocialButton";
 
-//icons
-import { MoonIcon, SunIcon, MenuAlt4Icon } from "@heroicons/react/outline";
-
-//Redux
-import { useDispatch, useSelector } from "react-redux";
-import { selectTheme, toggle } from "../../reducers/themeSlice";
-
 //Data
-import { NAV_DATA } from "../../data/navlinks";
 import { SOCIAL_DATA } from "../../data/socialLinks";
 import SocialButtonNormal from "../Buttons/SocialButtonNormal";
 
 const NavBar = () => {
-  const value = useSelector(selectTheme);
-  const dispatch = useDispatch();
   return (
     <AnimateSharedLayout>
       <div
-        className={`mt-12 flex flex-col justify-between max-w-screen-md mx-8 md:mx-auto font-noto selection:bg-[#3dda84] selection:text-n9`}
+        className={`mt-12 flex flex-col justify-between max-w-screen-md mx-8 md:mx-auto font-noto`}
       >
         <div className='max-h-10 flex flex-row justify-between'>
           <div className='text-neutral-100 text-3xl font-semibold'>
