@@ -2,24 +2,33 @@ import { createSlice } from '@reduxjs/toolkit'
 import { RootState } from '../store/store'
 
 export interface toggleState {
-  value: boolean
+  value: string
 }
 
 const initialState: toggleState = {
-  value: false,
+  value: "home",
 }
 
 export const navToggleSlice = createSlice({
   name: 'navToggle',
   initialState,
   reducers: {
-    togglenav:(state)=>{
-        state.value = !state.value;
-    }
+    home:(state)=>{
+        state.value = "home";
+    },
+    work:(state)=>{
+        state.value = "work";
+    },
+    projects:(state)=>{
+        state.value = "projects";
+    },
+    achivements:(state)=>{
+        state.value = "achivements";
+    },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { togglenav } = navToggleSlice.actions
-export const selectNavOpen = (state: RootState) => state.navToggle.value
+export const { home, work, projects, achivements } = navToggleSlice.actions
+export const selectNav = (state: RootState) => state.navToggle.value
 export default navToggleSlice.reducer;

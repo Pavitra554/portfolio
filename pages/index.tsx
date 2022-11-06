@@ -1,10 +1,11 @@
 import React from "react";
+import Head from "next/head";
 import type { NextPage } from "next";
 
 //Components
 import Container from "../layouts/Container";
+import Navigation from "../components/Navigations/Navigation";
 import LoadingAnimation from "../components/LoadingAnimation/LoadingAnimation";
-import Head from "next/head";
 
 const Home: NextPage = () => {
   const [showAnimation, setShowAnimation] = React.useState(true);
@@ -27,10 +28,14 @@ const Home: NextPage = () => {
   } else {
     return (
       <Container>
-        <div className='h-screen flex justify-center items-center'>
-          <div className='text-xl text-neutral-600'>
-            Build Under Developement ⚠️
+        <div className='min-h-screen h-full max-w-screen-md mx-6 md:mx-auto flex flex-col flex-grow '>
+          <Navigation/>
+          <div className='h-screen flex justify-center items-center'>
+            <div className='text-xl text-neutral-600'>
+              Build Under Developement ⚠️
+            </div>
           </div>
+          
         </div>
       </Container>
     );
