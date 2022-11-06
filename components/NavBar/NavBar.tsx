@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <AnimateSharedLayout>
       <div
-        className={`mt-12 flex flex-col justify-between max-w-screen-md mx-8 md:mx-auto font-noto`}
+        className={`mt-12 flex flex-col justify-between max-w-screen-md mx-6 md:mx-auto font-noto`}
       >
         <div className='max-h-10 flex flex-row justify-between'>
           <div className='text-neutral-100 text-3xl font-semibold'>

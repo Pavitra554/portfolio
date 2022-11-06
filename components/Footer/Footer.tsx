@@ -9,7 +9,7 @@ import SocialButtonFooter from '../Buttons/SocialButtonFooter';
 
 const Footer = () => {
   return (
-    <div className={`bg-neutral-900 hover:bg-neutral-800/40 shadow-md mb-6 p-4 rounded-lg relative bottom-0 mt-12 flex flex-col justify-between max-w-screen-md mx-8 md:mx-auto font-noto ease-linear duration-100`}>
+    <div className={`bg-neutral-900 hover:bg-neutral-800/40 shadow-md mb-6 p-4 rounded-lg relative bottom-0 mt-12 flex flex-col justify-between max-w-screen-md mx-6 md:mx-auto font-noto ease-linear duration-100`}>
         <div className='flex flex-col md:flex-row justify-between mb-5'>
             <div className=' flex flex-row space-x-2 items-center text-md text-neutral-500'>
                 <SiSpotify color='#1DB954' size={25}/>
