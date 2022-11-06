@@ -12,7 +12,12 @@ const Container = ({ children }: any) => {
   const value = useSelector(selectTheme);
 
   return (
-    <div className={``}>
+    <motion.div 
+        className={``}
+        initial={{opacity:0,y:20}}
+        animate={{opacity:1,y:0}}
+        transition={{duration:0.5}}
+      >
       <Head>
         <title>Pavitra⚡</title>
         <link rel='icon' href='/favicon.ico' />
@@ -20,7 +25,7 @@ const Container = ({ children }: any) => {
       <NavBar />
       {children}
       <Footer/>
-    </div>
+    </motion.div>
   );
 };
 
