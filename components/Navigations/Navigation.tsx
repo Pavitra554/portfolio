@@ -4,7 +4,7 @@ import Link from "next/link";
 //Redux
 import { useSelector, useDispatch } from "react-redux";
 import {
-  achivements,
+  achievements,
   home,
   projects,
   selectNav,
@@ -26,8 +26,8 @@ const Navigation = () => {
           onClick={() => dispatch(home())}
           className={
             value === "home"
-            ? "flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-            : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -42,8 +42,8 @@ const Navigation = () => {
           onClick={() => dispatch(work())}
           className={
             value === "work"
-            ? "flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-            : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -58,8 +58,8 @@ const Navigation = () => {
           onClick={() => dispatch(projects())}
           className={
             value === "projects"
-            ? "flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-            : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -71,7 +71,7 @@ const Navigation = () => {
         </div>
 
         <div
-          onClick={() => dispatch(achivements())}
+          onClick={() => dispatch(achievements())}
           className={
             value === "achivements"
               ? " flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
@@ -82,18 +82,18 @@ const Navigation = () => {
             <div>
               <TbFileCertificate size={20} />
             </div>
-            <div className='hidden md:flex'>Achivements</div>
+            <div className='hidden md:flex'>Achievements</div>
           </div>
         </div>
       </div>
-      <Link href={'https://github.com/Pavitra554'}>
-      <div
-        className={
-          "bg-neutral-800/60 p-1.5 flex justify-center items-center rounded-md text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto "
-        }
-      >
-        <BsStar size={20} />
-      </div>
+      <Link href={"https://github.com/Pavitra554"}>
+        <div
+          className={
+            "bg-neutral-800/60 p-1.5 flex justify-center items-center rounded-md text-neutral-400 hover:text-orange-400 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto "
+          }
+        >
+          <BsStar size={20} />
+        </div>
       </Link>
     </div>
   );

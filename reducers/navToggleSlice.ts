@@ -22,13 +22,13 @@ export const navToggleSlice = createSlice({
     projects:(state)=>{
         state.value = "projects";
     },
-    achivements:(state)=>{
+    achievements:(state)=>{
         state.value = "achivements";
     },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { home, work, projects, achivements } = navToggleSlice.actions
+export const { home, work, projects, achievements } = navToggleSlice.actions
 export const selectNav = (state: RootState) => state.navToggle.value
 export default navToggleSlice.reducer;

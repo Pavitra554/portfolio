@@ -6,6 +6,7 @@ import type { NextPage } from "next";
 import Container from "../layouts/Container";
 import Navigation from "../components/Navigations/Navigation";
 import LoadingAnimation from "../components/LoadingAnimation/LoadingAnimation";
+import MainScreens from "../components/MainScreens/MainScreens";
 
 const Home: NextPage = () => {
   const [showAnimation, setShowAnimation] = React.useState(true);
@@ -30,12 +31,7 @@ const Home: NextPage = () => {
       <Container>
         <div className='min-h-screen h-full max-w-screen-md mx-6 md:mx-auto flex flex-col flex-grow '>
           <Navigation/>
-          <div className='h-screen flex justify-center items-center'>
-            <div className='text-xl text-neutral-600'>
-              Build Under Developement ⚠️
-            </div>
-          </div>
-          
+          <MainScreens/>
         </div>
       </Container>
     );
