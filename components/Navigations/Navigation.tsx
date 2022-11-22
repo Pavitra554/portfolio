@@ -20,14 +20,14 @@ const Navigation = () => {
   const value = useSelector(selectNav);
   const dispatch = useDispatch();
   return (
-    <div className='mt-12 pb-2 flex flex-row justify-between border-b-2 border-neutral-800/60 font-noto tracking-wide'>
+    <div className='mt-12 pb-2 flex flex-row justify-between border-b-[1px] border-neutral-700/80 font-noto tracking-wide'>
       <div className='flex flex-row space-x-3 select-none ease-linear duration-100'>
         <div
           onClick={() => dispatch(home())}
           className={
             value === "home"
-              ? "flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-              : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-neutral-800/60 text-neutral-100 hover:bg-neutral-800/80 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-neutral-800/30 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -42,8 +42,8 @@ const Navigation = () => {
           onClick={() => dispatch(work())}
           className={
             value === "work"
-              ? "flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-              : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-neutral-800/60 text-neutral-100 hover:bg-neutral-800/80 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-neutral-800/30 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -58,8 +58,8 @@ const Navigation = () => {
           onClick={() => dispatch(projects())}
           className={
             value === "projects"
-              ? "flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-              : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-neutral-800/60 text-neutral-100 hover:bg-neutral-800/80 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-neutral-800/30 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -74,8 +74,8 @@ const Navigation = () => {
           onClick={() => dispatch(achievements())}
           className={
             value === "achivements"
-              ? " flex justify-center items-center bg-neutral-800 text-neutral-100 hover:bg-neutral-800/60 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-              : "hover:bg-neutral-800/60 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-neutral-800/60 text-neutral-100 hover:bg-neutral-800/80 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-neutral-800/30 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center space-x-2'>

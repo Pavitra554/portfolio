@@ -13,7 +13,7 @@ import Achivements from '../Screens/Achievements';
 const MainScreens = () => {
   const value = useSelector(selectNav);
   return (
-    <div className='h-screen flex justify-center items-center'>
+    <div className='flex '>
       {value === 'home' && <Home/>}
       {value === 'work' && <Work/>}
       {value === 'projects' && <Projects/>}
