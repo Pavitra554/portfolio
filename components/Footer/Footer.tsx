@@ -10,9 +10,13 @@ import SocialButtonFooter from '../Buttons/SocialButtonFooter';
 const Footer = () => {
   return (
     <>
-    <div className='max-w-screen-md mt-12 mx-auto w-full h-[1px] bg-neutral-700/80'></div>
+    <div className='flex items-center'>
+      <div className='max-w-screen-md mt-12 mx-6 md:mx-auto w-full h-[1px] bg-neutral-700/80'>
+        
+      </div>
+    </div>
     <div
-      className={`bg-neutral-800/40 hover:bg-neutral-800/60 shadow-md mb-6 p-4 rounded-lg relative bottom-0 mt-6 flex flex-col justify-between max-w-screen-md mx-6 md:mx-auto font-noto ease-linear duration-100`}
+      className={`bg-neutral-800/40 hover:bg-neutral-800/60 shadow-md mb-6 p-4 rounded-lg relative bottom-0 mt-4 flex flex-col justify-between max-w-screen-md mx-6 md:mx-auto font-noto ease-linear duration-100`}
     >
       <div className='flex flex-col md:flex-row justify-between mb-5'>
         <div className=' flex flex-row space-x-2 items-center text-md text-neutral-500'>
