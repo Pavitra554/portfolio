@@ -2,9 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 
 //React Icons
-import {SiVercel,SiSpotify} from 'react-icons/si';
+import {SiVercel} from 'react-icons/si';
 import { SOCIAL_DATA } from '../../data/socialLinks';
 import SocialButtonFooter from '../Buttons/SocialButtonFooter';
+import {BsFillLightningChargeFill} from 'react-icons/bs';
 
 
 const Footer = () => {
@@ -20,9 +21,11 @@ const Footer = () => {
     >
       <div className='flex flex-col md:flex-row justify-between mb-5'>
         <div className=' flex flex-row space-x-2 items-center text-md text-neutral-500'>
-          <SiSpotify color='#1DB954' size={25} />
-          <div className='text-neutral-200'>Not Playing</div>
-          <div>- Spotify</div>
+          <div className='flex justify-center items-center h-6 w-6 rounded-full bg-[#3ddc84]/10'>
+            <BsFillLightningChargeFill className="text-[#3ddc84] animate-pulse" size={15}/>
+          </div>
+          <div className='text-neutral-200'>Learning REST</div>
+          <div>- Status</div>
         </div>
 
         <div className='flex flex-row mt-4 md:mt-0 space-x-3'>
