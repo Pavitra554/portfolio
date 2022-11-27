@@ -7,7 +7,7 @@ const TechStack = () => {
       <div className='text-noto font-semibold px-3 md:px-4 py-2 text-lg md:text-2xl text-neutral-100 select-none'>
         Tech Stack
       </div>
-      <div className='flex flex-row flex-wrap  bg-neutral-800/20 hover:bg-neutral-800/30 p-3 md:p-4 rounded-lg text-neutral-400/70  text-noto text-base tracking-wide  ease-linear duration-100'>
+      <div className='flex flex-row flex-wrap  bg-neutral-800/40 hover:bg-neutral-800/50 p-3 md:p-4 rounded-lg text-neutral-400/70  text-noto text-base tracking-wide  ease-linear duration-100'>
         <Badge colors="bg-gray-400/10 text-gray-300" text="Next.js"/>
         <Badge colors="bg-blue-400/10 text-blue-400" text="React Native"/>
         <Badge colors="bg-sky-400/10 text-sky-400" text="React.js"/>
