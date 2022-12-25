@@ -13,7 +13,7 @@ export const SOCIAL_DATA: linkType[] = [
     name: "Leetcode",
   },
   {
-    link: "https://twitter.com/behara_pavitra",
+    link: "https://twitter.com/pavitra_ts",
     name: "Twitter",
   },
   {

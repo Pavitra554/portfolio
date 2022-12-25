@@ -1,13 +1,15 @@
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 
 type props = {
-    colors:string,
+    link:any,
     text:string
 }
-const Badge:React.FC<props> = ({text,colors}) => {
+const Badge:React.FC<props> = ({text,link}) => {
   return (
-    <span className={'m-1 px-2 py-1 rounded-md font-noto '+colors}>
-        {text}
+    <span className={'bg-neutral-800 text-neutral-300/90 flex flex-row justify-center items-center space-x-2 m-1 px-1.5 py-1 rounded-md font-noto text-sm select-none '}>
+        <Image src={link} alt="" height={25} width={25} className='rounded-sm'/>
+        <div>{text}</div>
     </span>
   )
 }

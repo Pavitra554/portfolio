@@ -4,7 +4,7 @@ import HighText from "./HighText";
 const About = () => {
   return (
     <div className=''>
-        <div className='text-noto font-semibold px-3 md:px-4 py-2 text-lg md:text-2xl text-neutral-100 select-none'>
+        <div className='text-noto font-semibold px-1 py-2 text-xl md:text-2xl text-neutral-100 select-none'>
             About
         </div>
        <div className='bg-neutral-800/40 hover:brightness-125 p-3 md:p-4 rounded-lg text-neutral-400/70  text-noto text-base  md:text-lg tracking-wide  ease-linear duration-100'>
