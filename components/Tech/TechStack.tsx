@@ -32,7 +32,7 @@ import vercel from '../../public/img/tools/vercel.png';
 
 const TechStack = () => {
   return (
-    <div className='mt-10 font-noto'>
+    <div className='mt-10 font-noto md:saturate-0 hover:saturate-100 duration-150 ease-linear'>
       <div className='font-noto font-semibold px-1 py-2 text-xl md:text-2xl text-neutral-100 select-none'>
         Tech Stack
       </div>
