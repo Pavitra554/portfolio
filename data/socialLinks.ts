@@ -21,7 +21,7 @@ export const SOCIAL_DATA: linkType[] = [
     name: "LinkedIn",
   },
   {
-    link: "https://www.instagram.com/pavitra.ts/",
-    name: "Instagram",
+    link: "mailto:pavitrabehara286@gmail.com",
+    name: "Mail",
   },
 ];

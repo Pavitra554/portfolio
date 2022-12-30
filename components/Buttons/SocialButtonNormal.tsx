@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 //React Icons
-import { SiLeetcode,SiGithub,SiLinkedin,SiTwitter,SiInstagram} from "react-icons/si";
+import { SiLeetcode,SiGithub,SiLinkedin,SiTwitter,SiGmail} from "react-icons/si";
 
 type props = {
   link: string;
@@ -18,7 +18,7 @@ const SocialButtonNormal: React.FC<props> = ({ link, name }) => {
             { name === 'Github' && <SiGithub size={25} /> }
             { name === 'LinkedIn' && <SiLinkedin size={25} /> }
             { name === 'Twitter' && <SiTwitter size={25} /> }
-            { name === 'Instagram' && <SiInstagram size={25} /> }
+            { name === 'Mail' && <SiGmail size={25} /> }
           </div>
         </div>
     </Link>
