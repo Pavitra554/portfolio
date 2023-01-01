@@ -19,7 +19,7 @@ const LoadingAnimation = () => {
         transition={{ duration: 0.5 }}
         className='h-screen flex flex-col justify-center items-center font-noto'
       >
-        <div className='flex flex-row items-center italic text-base md:text-xl text-center text-neutral-500 select-nones'>
+        <div className='flex flex-row items-center italic text-base md:text-xl text-center text-[#c4c4cc] select-nones'>
           Learning in Lightning speed <BsFillLightningChargeFill className="ml-2 text-[#3ddc84]" size={20}/>
           
           {/* "Make it work, Make it right, Make it fast ⚡" */}
@@ -29,7 +29,7 @@ const LoadingAnimation = () => {
             height={6}
             width={120}
             className='rounded-full m-4'
-            color='#e5e5e5'
+            color='#c4c4cc'
           />
         </div>
       </motion.div>

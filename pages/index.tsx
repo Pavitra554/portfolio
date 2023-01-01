@@ -29,7 +29,7 @@ const Home: NextPage = () => {
   } else {
     return (
       <Container>
-        <div className='min-h-screen h-full max-w-screen-md mx-6 md:mx-auto flex flex-col flex-grow '>
+        <div className='min-h-screen h-full max-w-screen-md mx-4 md:mx-auto flex flex-col flex-grow '>
           <Navigation/>
           <MainScreens/>
         </div>

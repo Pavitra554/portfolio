@@ -2,6 +2,7 @@ import React from "react";
 
 //Framer Motion
 import { AnimatePresence, motion } from "framer-motion";
+import ProjectWork from "../Projects/ProjectWork";
 
 const Projects = () => {
   return (
@@ -11,11 +12,9 @@ const Projects = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.5 }}
-        className='text-2xl text-neutral-600 select-none text-center'
+        className='font-noto mt-10 w-full'
       >
-        {" "}
-        <div>Projects Screen</div>
-        <div>Build Under Developement ⚠️</div>
+        <ProjectWork/>
       </motion.div>
     </AnimatePresence>
   );

@@ -3,8 +3,7 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
-    background-color: #121212;
-
+    background-color: #18181b;
 }
 
 /* width */
@@ -16,11 +15,12 @@ body{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #262626; 
+    background: #313135; 
     border-radius: 30px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #404040; 
+    background: #6C6C76; 
+    transition: all 0.5s linear;
   }

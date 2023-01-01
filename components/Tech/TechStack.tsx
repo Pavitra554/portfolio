@@ -33,11 +33,11 @@ import vercel from '../../public/img/tools/vercel.png';
 const TechStack = () => {
   return (
     <div className='mt-10 font-noto md:grayscale hover:grayscale-0 duration-150 ease-linear'>
-      <div className='font-noto font-semibold px-1 py-2 text-xl md:text-2xl text-neutral-100 select-none'>
+      <div className='font-noto font-semibold px-1 py-2 text-xl md:text-2xl text-slate-100 select-none'>
         Tech Stack
       </div>
-      <div className='flex flex-col bg-neutral-800/40 hover:bg-neutral-800/50 p-3 md:p-4 rounded-lg text-neutral-400/70  text-noto text-base tracking-wide  ease-linear duration-100'>
-        <div className="text-neutral-500/70">Language's</div>
+      <div className='flex flex-col bg-[#27272a]/40 hover:bg-[#27272a]/50 p-3 md:p-4 rounded-lg text-neutral-400/70  text-noto text-base tracking-wide  ease-linear duration-100'>
+        <div className="text-[#7d7d85]">Language's</div>
         <div className="flex flex-row flex-wrap pt-1 pb-3">
           <Badge link={ts} text="Typescript"/>
           <Badge link={js} text="Javascript"/>
@@ -46,7 +46,7 @@ const TechStack = () => {
           <Badge link={py} text="Python"/>
           <Badge link={c} text="C"/>
         </div>
-        <div className="text-neutral-500/70">Frameworks / Tech's</div>
+        <div className="text-[#7d7d85]">Frameworks / Tech's</div>
         <div className="flex flex-row flex-wrap pt-1 pb-3">
           <Badge link={next} text="Next.js"/>
           <Badge link={rn} text="React Native"/>
@@ -60,7 +60,7 @@ const TechStack = () => {
           <Badge link={rd} text="Redux"/>
           <Badge link={fb} text="Firebase"/> 
         </div>
-        <div className="text-neutral-500/70">Developer Tool's</div>
+        <div className="text-[#7d7d85]">Developer Tool's</div>
         <div className="flex flex-row flex-wrap pt-1 pb-3">
           <Badge link={git} text="Git"/>
           <Badge link={github} text="GitHub"/>

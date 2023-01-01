@@ -31,7 +31,7 @@ const SocialButton: React.FC<props> = ({ link, name }) => {
         onMouseEnter={() => handleMouseEnter()}
         onMouseLeave={() => handleMouseLeave()}
       >
-        <motion.div className='flex flex-row items-center p-2 rounded-md bg-neutral-800/60 text-neutral-400 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto'>
+        <motion.div className='flex flex-row items-center p-2 rounded-md bg-[#27272a] text-[#b0b0b9] shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto'>
           <motion.div layout>
             { name === 'Leetcode' && <SiLeetcode size={20} /> }
             { name === 'Github' && <SiGithub size={20} /> }

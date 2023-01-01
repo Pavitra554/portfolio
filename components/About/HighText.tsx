@@ -2,7 +2,7 @@ import React from 'react'
 
 const HighText = ({children}:any) => {
   return (
-    <span className='text-neutral-200'>
+    <span className='text-[#c4c4cc]'>
         {children}
     </span>
   )
