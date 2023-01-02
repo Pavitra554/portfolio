@@ -16,5 +16,6 @@ export const paraColor = '#7d7d85'
 export const highlightedText = '#c4c4cc'
 export const demmed = '#6e6e78'
 export const heading = 'text-slate-100'
+export const hoverText = '#e3e3eb'
 
 
