@@ -28,7 +28,7 @@ const NavBar = () => {
           </motion.div>
         </div>
         <div className='text-[#6e6e78] text-sm tracking-wider leading-4 font-mono'>
-          Developer / Programmer
+          Full Stack Developer
         </div>
 
         {/*----------Social Links for Mobile----------- */}
