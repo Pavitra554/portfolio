@@ -32,7 +32,7 @@ import vercel from '../../public/img/tools/vercel.png';
 
 const TechStack = () => {
   return (
-    <div className='mt-10 font-noto md:grayscale hover:grayscale-0 duration-150 ease-linear'>
+    <div className='mt-10 font-noto duration-150 ease-linear'>
       <div className='font-noto font-semibold px-1 py-2 text-xl md:text-2xl text-slate-100 select-none'>
         Tech Stack
       </div>
@@ -42,16 +42,13 @@ const TechStack = () => {
           <Badge link={ts} text="Typescript"/>
           <Badge link={js} text="Javascript"/>
           <Badge link={java} text="Java"/>
-          <Badge link={dart} text="Dart"/>
-          <Badge link={py} text="Python"/>
-          <Badge link={c} text="C"/>
+          
         </div>
         <div className="text-[#7d7d85]">Frameworks / Tech's</div>
         <div className="flex flex-row flex-wrap pt-1 pb-3">
           <Badge link={next} text="Next.js"/>
           <Badge link={rn} text="React Native"/>
           <Badge link={rj} text="React.js"/>
-          <Badge link={ft} text="Flutter"/>
           <Badge link={ex} text="Express.js"/>
           <Badge link={nj} text="Node.js"/>
           <Badge link={mb} text="MongoDB"/>
@@ -71,6 +68,14 @@ const TechStack = () => {
           <Badge link={figma} text="Figma"/>
           <Badge link={canva} text="Canva"/>
         </div>
+        <div className="text-[#7d7d85]">Familiar With</div>
+        <div className="flex flex-row flex-wrap pt-1 pb-3">
+          <Badge link={dart} text="Dart"/>
+          <Badge link={ft} text="Flutter"/>
+          <Badge link={py} text="Python"/>
+          <Badge link={c} text="C"/>
+        </div>
+        
       </div>
     </div>
   );
