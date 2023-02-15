@@ -4,7 +4,6 @@ import Link from "next/link";
 //Redux
 import { useSelector, useDispatch } from "react-redux";
 import {
-  achievements,
   home,
   projects,
   selectNav,
@@ -50,7 +49,7 @@ const Navigation = () => {
             <div>
               <CgWorkAlt size={20} />
             </div>
-            <div className='hidden md:flex'>Work</div>
+            <div className='hidden md:flex'>Work Experience / Hackathons</div>
           </div>
         </div>
 
@@ -70,21 +69,7 @@ const Navigation = () => {
           </div>
         </div>
 
-        <div
-          onClick={() => dispatch(achievements())}
-          className={
-            value === "achivements"
-            ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-            : "hover:bg-[#27272a]/40 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
-          }
-        >
-          <div className='flex flex-row items-center space-x-2'>
-            <div>
-              <TbFileCertificate size={20} />
-            </div>
-            <div className='hidden md:flex'>Achievements</div>
-          </div>
-        </div>
+        
       </div>
       <Link href={"https://github.com/Pavitra554"}>
         <div
