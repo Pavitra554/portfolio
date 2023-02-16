@@ -3,30 +3,38 @@ import Link from "next/link";
 
 //Redux
 import { useSelector, useDispatch } from "react-redux";
-import {
-  home,
-  projects,
-  selectNav,
-  work,
-} from "../../reducers/navToggleSlice";
+import { home, projects, selectNav, work } from "../../reducers/navToggleSlice";
 
 //React Icons
 import { TbHome, TbCode, TbFileCertificate } from "react-icons/tb";
-import { CgWorkAlt } from "react-icons/cg";
-import { BsStar } from "react-icons/bs";
+import { CgWorkAlt,CgClose } from "react-icons/cg";
+import { BsFillLightningChargeFill, BsStar } from "react-icons/bs";
+import { TiWarningOutline } from "react-icons/ti";
+
+//React Hot Toast
+import toast, { Toaster } from "react-hot-toast";
+
+const notify = () =>
+  toast.loading((t) => (
+    <div className="flex flex-row items-center space-x-2 ">
+      <div className="text-[#3ddc84] ">
+        Coming Soon..!
+      </div>
+    </div>
+  ));
 
 const Navigation = () => {
   const value = useSelector(selectNav);
   const dispatch = useDispatch();
   return (
     <div className='mt-12 pb-2 flex flex-row justify-between border-b-[1px] border-[#27272a] font-noto tracking-wide'>
-      <div className='flex flex-row space-x-3 select-none ease-linear duration-100'>
+      <div className='flex flex-row select-none ease-linear duration-100'>
         <div
           onClick={() => dispatch(home())}
           className={
             value === "home"
-              ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-              : "hover:bg-[#27272a]/40 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-2 mr-2  rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-[#27272a]/40 p-2 mr-2  rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -41,8 +49,8 @@ const Navigation = () => {
           onClick={() => dispatch(work())}
           className={
             value === "work"
-            ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-            : "hover:bg-[#27272a]/40 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-2 mr-2  rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-[#27272a]/40 p-2 mr-2  rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -57,8 +65,8 @@ const Navigation = () => {
           onClick={() => dispatch(projects())}
           className={
             value === "projects"
-            ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-1.5 rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-            : "hover:bg-[#27272a]/40 p-1.5 rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-2 mr-2  rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-[#27272a]/40 p-2 mr-2  rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -68,18 +76,33 @@ const Navigation = () => {
             <div className='hidden md:flex'>Projects</div>
           </div>
         </div>
-
-        
       </div>
-      <Link href={"https://github.com/Pavitra554"}>
-        <div
-          className={
-            "bg-[#27272a] p-1.5 flex justify-center items-center rounded-md text-neutral-400 hover:text-orange-400 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto "
-          }
-        >
-          <BsStar size={20} />
-        </div>
-      </Link>
+      <Toaster
+        position='top-center'
+        reverseOrder={false}
+        gutter={8}
+        containerClassName=''
+        containerStyle={{}}
+        toastOptions={{
+          // Define default options
+          className: "",
+          duration: 1500,
+          style: {
+            background: "#1b402c",
+          },
+
+          // Default options for specific types
+        }}
+      />
+      <button
+        onClick={notify}
+        className='flex p-2 px-2.5 justify-center items-center rounded-md bg-[#3ddc84]/10 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto '
+      >
+        <BsFillLightningChargeFill
+          className='text-[#3ddc84] animate-pulse '
+          size={20}
+        />
+      </button>
     </div>
   );
 };
