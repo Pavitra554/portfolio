@@ -8,7 +8,6 @@ import { selectNav } from '../../reducers/navToggleSlice';
 import Home from '../Screens/Home';
 import Work from '../Screens/Work';
 import Projects from '../Screens/Projects';
-import Achivements from '../Screens/Achievements';
 
 const MainScreens = () => {
   const value = useSelector(selectNav);
@@ -17,7 +16,6 @@ const MainScreens = () => {
       {value === 'home' && <Home/>}
       {value === 'work' && <Work/>}
       {value === 'projects' && <Projects/>}
-      {value === 'achivements' && <Achivements/>}
     </div>
   )
 }
