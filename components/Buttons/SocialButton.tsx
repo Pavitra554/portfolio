@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-
 //Framer Motion
 import { AnimatePresence, useAnimation, motion } from "framer-motion";
 
@@ -25,7 +24,7 @@ const SocialButton: React.FC<props> = ({ link, name }) => {
     controls.start("initial");
   }
   return (
-    <Link href={link}>
+    <Link href={link} target="_blank">
       <motion.div
         layout
         onMouseEnter={() => handleMouseEnter()}

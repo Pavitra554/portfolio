@@ -57,6 +57,13 @@ const TechStack = () => {
           <Badge link={rd} text="Redux"/>
           <Badge link={fb} text="Firebase"/> 
         </div>
+        <div className="text-[#7d7d85]">Familiar With</div>
+        <div className="flex flex-row flex-wrap pt-1 pb-3">
+          <Badge link={dart} text="Dart"/>
+          <Badge link={ft} text="Flutter"/>
+          <Badge link={py} text="Python"/>
+          <Badge link={c} text="C"/>
+        </div>
         <div className="text-[#7d7d85]">Developer Tool's</div>
         <div className="flex flex-row flex-wrap pt-1 pb-3">
           <Badge link={git} text="Git"/>
@@ -68,14 +75,6 @@ const TechStack = () => {
           <Badge link={figma} text="Figma"/>
           <Badge link={canva} text="Canva"/>
         </div>
-        <div className="text-[#7d7d85]">Familiar With</div>
-        <div className="flex flex-row flex-wrap pt-1 pb-3">
-          <Badge link={dart} text="Dart"/>
-          <Badge link={ft} text="Flutter"/>
-          <Badge link={py} text="Python"/>
-          <Badge link={c} text="C"/>
-        </div>
-        
       </div>
     </div>
   );

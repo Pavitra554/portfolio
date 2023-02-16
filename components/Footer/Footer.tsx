@@ -37,7 +37,7 @@ const Footer = () => {
       <div className='flex flex-col md:flex-row justify-between'>
         <div className='text-sm text-[#6e6e78] '>
           Made By
-          <Link href='https://www.linkedin.com/in/pavitra-behara/'>
+          <Link href='https://www.linkedin.com/in/pavitra-behara/' target="_blank">
             <span className='text-[#c4c4cc] pl-1 hover:text-neutral-100 italic ease-linear duration-100'>
               @Pavitra
             </span>
@@ -46,7 +46,7 @@ const Footer = () => {
 
         <div className='flex flex-row items-center text-sm text-[#6e6e78]'>
           <div>Deployed By </div>
-          <Link href='https://vercel.com'>
+          <Link href='https://vercel.com' target="_blank">
             <span className=' flex flex-row space-x-1 text-[#c4c4cc] pl-1 hover:text-neutral-100 ease-linear duration-100'>
               <SiVercel size={15} />
               <div>Vercel</div>
