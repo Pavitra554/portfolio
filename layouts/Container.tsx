@@ -19,8 +19,11 @@ const Container = ({ children }: any) => {
         transition={{duration:0.5}}
       >
       <Head>
-        <title>Pavitra⚡</title>
+        <title>Pavitra</title>
         <link rel='icon' href='/favicon.ico' />
+        <meta name="description" content="Pavitra's portfolio showcasing his development skills and projects."></meta>
+        <meta name="author" content="Pavitra Behara"></meta>
+        <meta name="keywords" content="Pavitra,pavitra554,pavitra.ts,Development,Android Development,Web Development, portfolio,TailwindCSS,React.js,react,github, Next.js,Redux,Framer Motion, projects, skills"></meta>
       </Head>
       <NavBar />
       {children}
