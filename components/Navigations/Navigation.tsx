@@ -88,7 +88,7 @@ const Navigation = () => {
           className: "",
           duration: 1500,
           style: {
-            background: "#1b402c",
+            background: "#0d2b1a",
           },
 
           // Default options for specific types
