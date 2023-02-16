@@ -40,11 +40,11 @@ const WorkCard: React.FC<props> = ({
           {date}
         </div>
       </div>
-      <div className='flex flex-row flex-wrap space-x-2'>
+      <div className='flex flex-row flex-wrap '>
         {tags.map((e, i) => {
           return (
-            <div key={i} className='flex flex-row my-1'>
-              <div className='bg-[#27272a] text-[#b0b0b9] items-center px-1.5 py-1 rounded-md font-noto font-medium text-sm select-none'>
+            <div key={i} className='flex flex-row my-1 mr-2'>
+              <div className='bg-[#27272a] text-[#b0b0b9] items-center px-1.5 py-1 rounded-md font-noto font-medium text-xs md:text-sm select-none'>
                 {e}
               </div>
             </div>
