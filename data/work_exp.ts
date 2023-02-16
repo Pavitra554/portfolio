@@ -25,6 +25,30 @@ export const work_exp: workTypes[] = [
         ]
     },
     {
+        name:'Electrothon 4.0 by NIT Hamirpur',
+        cer_link:'https://devfolio.co/projects/svaasthy-4e9c',
+        date:'Feb 2022',
+        proj:'Pandemic Theme.',
+        proj_link:'https://drive.google.com/file/d/1qYsmfxUFBwElShZ8iJnAq--HD2T68CJd/view',
+        description:'Built “Svaasthy”, Which enables us to ease up the emergency medical situations by providing the best and the fastest way to reach your nearest hospitals or medical centers.',
+        tags:['Leader','Developer','Hackathon','Winner'],
+        points:[
+            'Winner under ',
+        ]
+    },
+    {
+        name:'HackOdisha by NIT Rourkela',
+        cer_link:'https://devfolio.co/projects/mentally-e08e',
+        date:'Sept 2021',
+        proj:`Best Beginner's Team`,
+        proj_link:'https://drive.google.com/file/d/1hy8kmfCkY-zcAPXcfM3ci2W78DOZVQhR/view?usp=sharing',
+        description:`Built “Ment-Ally”, Which help's people to gain mental peace and stability.`,
+        tags:['Developer','Hackathon','Winner'],
+        points:[
+            `Winner under `,
+        ]
+    },
+    {
         name:'Code4Odisha - Hackathon Organization',
         cer_link:'https://www.linkedin.com/company/code4odisha/',
         date:' 1 July 2022 - 28 Aug 2022',
@@ -48,7 +72,6 @@ export const work_exp: workTypes[] = [
         points:[
             'Worked on the official website of ',
             'Participated in code reviews and bug fixes.',
-            'Live event updates.'
         ]
     }
 ]
