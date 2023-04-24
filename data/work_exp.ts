@@ -13,7 +13,7 @@ export const work_exp: workTypes[] = [
     {
         name:'Sypto - Futurebits Technology (OPC) Pvt Ltd',
         cer_link:'https://drive.google.com/file/d/13q69v5n6vpsE4pylwkig9oeaWEJCh3E2/view',
-        date:'1 Sept 2022 - 1 Oct 2022',
+        date:'Sept 1 - Oct 1, 2022',
         proj:'Sypto',
         proj_link:'https://www.sypto.xyz/',
         description:'',
@@ -51,7 +51,7 @@ export const work_exp: workTypes[] = [
     {
         name:'Code4Odisha - Hackathon Organization',
         cer_link:'https://www.linkedin.com/company/code4odisha/',
-        date:' 1 July 2022 - 28 Aug 2022',
+        date:'July 1 - Aug 28, 2022',
         proj:'Code4Odisha Session 1',
         proj_link:'https://code4odisha.tech/',
         description:'',
@@ -64,7 +64,7 @@ export const work_exp: workTypes[] = [
     {
         name:"Hack Club ITER - Developer's Organization",
         cer_link:'https://iter.hackclub.com/',
-        date:'25 Sept 2022 - 1 Oct 2022',
+        date:'Sept 25 - Oct 1, 2022',
         proj:'Hack The October Event',
         proj_link:'https://hacktheoctober.hackclub.com/',
         description:'',
@@ -72,6 +72,18 @@ export const work_exp: workTypes[] = [
         points:[
             'Worked on the official website of ',
             'Participated in code reviews and bug fixes.',
+        ]
+    },
+    {
+        name:"Flow Hackathon by Flow",
+        cer_link:'https://devfolio.co/projects/flowlinks-8676',
+        date:'Feb 21 - Mar 1, 2023',
+        proj:'FlowLinks',
+        proj_link:'https://flowlinks.vercel.app/',
+        description:'Own & Showcase all your links at one place , powered by NFTs on Flow Blockchain.',
+        tags:['Hackathon','Developer','Blockchain'],
+        points:[
+            'Worked on Frontend and functionality integration of ',
         ]
     }
 ]
