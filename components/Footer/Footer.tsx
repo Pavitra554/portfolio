@@ -24,8 +24,8 @@ const Footer = () => {
           {/* <div className='flex justify-center items-center h-6 w-6 rounded-full bg-[#3ddc84]/10'>
             <BsFillLightningChargeFill className="text-[#3ddc84] animate-pulse" size={15}/>
           </div> */}
-          <div className='text-[#c4c4cc]'>Learning REST</div>
-          <div className='text-[#6e6e78]'>- Status</div>
+          <div className='text-[#6e6e78]'>Status - </div>
+          <div className='text-[#c4c4cc]'>Learning Jest</div>
         </div>
 
         <div className='flex flex-row mt-4 md:mt-0 space-x-3'>
