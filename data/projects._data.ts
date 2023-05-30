@@ -8,6 +8,13 @@ interface projects_data_type{
 
 export const projects_data: projects_data_type[] = [
     {
+        name:'ShrinkIt',
+        tags:['Next.js','Tailwind CSS','Express.js','Typescript','MongoDB'],
+        description:'ShrinkIt allows to create a shortened link making it easy to share.',
+        github:'https://github.com/Pavitra554/shrinkIt',
+        demo:'https://shrink-it-ashy.vercel.app/'
+    },
+    {
         name:'Svaasthy',
         tags:['React Native','Expo','Typescript','Firebase'],
         description:'“Svaasthy” enables us to ease up the emergency medical situations by providing the best and the fastest way to reach your nearest hospitals or medical centers.',
