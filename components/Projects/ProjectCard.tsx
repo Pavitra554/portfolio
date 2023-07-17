@@ -23,7 +23,7 @@ const ProjectCard: React.FC<props> = ({
   link,
 }) => {
   return (
-    <div className='flex gap-4 flex-col md:flex-row bg-[#27272a]/40 hover:brightness-110 p-3 md:p-4 rounded-lg text-neutral-400/70  font-noto text-base  md:text-base tracking-wide hover:scale-110 ease-linear duration-100'>
+    <div className='flex gap-4 flex-col md:flex-row bg-[#27272a]/40 hover:brightness-110 p-3 md:p-4 rounded-lg text-neutral-400/70  font-noto text-base  md:text-base tracking-wide md:hover:scale-110 ease-linear duration-100'>
       <div className="w-full overflow-hidden rounded-md">
         <Image
           src={link}
