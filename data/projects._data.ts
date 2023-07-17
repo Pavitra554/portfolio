@@ -27,15 +27,15 @@ export const projects_data: projects_data_type[] = [
     {
         name:'Svaasthy',
         tags:['React Native','Expo','Typescript','Firebase'],
-        description:'“Svaasthy” enables us to ease up the emergency medical situations by providing the best and the fastest way to reach your nearest hospitals or medical centers.',
+        description:'“Svaasthy” enables us to ease up the emergency medical situations by providing  the fastest way to reach your nearest hospitals.',
         github:'https://github.com/Pavitra554/Svaasthy',
         demo:'',
         link:svaasthy
     },
     {
         name:'Instagram Clone',
-        tags:['Next.js','Redux','Javascript','Firebase','Framer Motion','CSS'],
-        description:`As the project name describes this is a clone of the Instagram web app build with Next.js. where you can log in, like, comment, and also you can upload a post.`,
+        tags:['Next.js','Redux','Javascript','Firebase'],
+        description:`Clone of the Instagram web app, where you can log in, like, comment, and also you can upload a post.`,
         github:'https://github.com/Pavitra554/Instagram-Clone',
         demo:'https://instagram-clone-psi-roan.vercel.app/',
         link:instagram

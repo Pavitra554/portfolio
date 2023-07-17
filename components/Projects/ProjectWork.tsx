@@ -19,6 +19,7 @@ const ProjectWork = () => {
               tags={e.tags}
               github={e.github}
               demo={e.demo}
+              link={e.link}
             />
           );
         })}

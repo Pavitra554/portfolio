@@ -14,14 +14,16 @@ import { TiWarningOutline } from "react-icons/ti";
 //React Hot Toast
 import toast, { Toaster } from "react-hot-toast";
 
-const notify = () =>
-  toast.loading((t) => (
-    <div className="flex flex-row items-center space-x-2 ">
-      <div className="text-[#3ddc84] ">
-        Coming Soon..!
-      </div>
-    </div>
-  ));
+const notify = () => toast('Under Developement!',
+{
+  icon: '🚧',
+  style: {
+    borderRadius: '8px',
+    background: '#27272a',
+    color: '#fff',
+  },
+}
+);
 
 const Navigation = () => {
   const value = useSelector(selectNav);
@@ -33,8 +35,8 @@ const Navigation = () => {
           onClick={() => dispatch(home())}
           className={
             value === "home"
-              ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-2 mr-2  rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-              : "hover:bg-[#27272a]/40 p-2 mr-2  rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-[#27272a] text-zinc-100 p-2 mr-2  rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-[#27272a]/40 p-2 mr-2  rounded-md flex justify-center items-center  text-zinc-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -49,8 +51,8 @@ const Navigation = () => {
           onClick={() => dispatch(work())}
           className={
             value === "work"
-              ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-2 mr-2  rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-              : "hover:bg-[#27272a]/40 p-2 mr-2  rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-[#27272a] text-zinc-100 p-2 mr-2  rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-[#27272a]/40 p-2 mr-2  rounded-md flex justify-center items-center  text-zinc-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -65,8 +67,8 @@ const Navigation = () => {
           onClick={() => dispatch(projects())}
           className={
             value === "projects"
-              ? "flex justify-center items-center bg-[#27272a] text-neutral-100 p-2 mr-2  rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
-              : "hover:bg-[#27272a]/40 p-2 mr-2  rounded-md flex justify-center items-center  text-neutral-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
+              ? "flex justify-center items-center bg-[#27272a] text-zinc-100 p-2 mr-2  rounded-md active:scale-95 ease-linear duration-100 cursor-pointer"
+              : "hover:bg-[#27272a]/40 p-2 mr-2  rounded-md flex justify-center items-center  text-zinc-400 shadow-md select-none hover:brightness-125 active:scale-95 ease-linear duration-100 cursor-pointer"
           }
         >
           <div className='flex flex-row items-center justify-center space-x-2'>
@@ -86,20 +88,16 @@ const Navigation = () => {
         toastOptions={{
           // Define default options
           className: "",
-          duration: 1500,
-          style: {
-            background: "#0d2b1a",
-          },
-
+          duration: 2000,
           // Default options for specific types
         }}
       />
       <button
         onClick={notify}
-        className='flex p-2 px-2.5 justify-center items-center rounded-md bg-[#3ddc84]/10 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto '
+        className='flex p-2 px-2.5 justify-center items-center rounded-md bg-zinc-200/10 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto '
       >
         <BsFillLightningChargeFill
-          className='text-[#3ddc84] animate-pulse '
+          className='text-zinc-200 animate-pulse '
           size={20}
         />
       </button>
@@ -108,3 +106,5 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+//text-[#3ddc84]
