@@ -5,6 +5,7 @@ import ment from '../public/img/projects-preview/ment-ally.png';
 import shrinkit from '../public/img/projects-preview/shrinkit.png';
 import svaasthy from '../public/img/projects-preview/svaasthy.png';
 import whatsapp from '../public/img/projects-preview/whatsapp-clone.png';
+import weather from '../public/img/projects-preview/weather.png'
 
 interface projects_data_type{
     name:string
@@ -63,5 +64,13 @@ export const projects_data: projects_data_type[] = [
         github:'https://github.com/Pavitra554/WhatsApp_UI_Clone_React_Native',
         demo:'https://reactnativeexample.com/whatsapp-ui-clone-using-react-native/',
         link:whatsapp
+    },
+    {
+        name:'Weather App',
+        tags:['React Native','Expo','Typescript','Lottie','Reanimated v2'],
+        description:'This is a weather app build with React Native. Which uses openweather API for weather data..',
+        github:'https://github.com/Pavitra554/Weather_App',
+        demo:'https://reactnativeexample.com/a-weather-app-with-clean-attractive-ui-and-graph-stats-build-using-react-native/',
+        link:weather
     },
 ]
