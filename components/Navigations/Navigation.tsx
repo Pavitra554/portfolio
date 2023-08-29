@@ -8,22 +8,22 @@ import { home, projects, selectNav, work } from "../../reducers/navToggleSlice";
 //React Icons
 import { TbHome, TbCode, TbFileCertificate } from "react-icons/tb";
 import { CgWorkAlt,CgClose } from "react-icons/cg";
-import { BsFillLightningChargeFill, BsStar } from "react-icons/bs";
+import { BsLink45Deg,BsStar } from "react-icons/bs";
 import { TiWarningOutline } from "react-icons/ti";
 
 //React Hot Toast
 import toast, { Toaster } from "react-hot-toast";
 
-const notify = () => toast('Under Developement!',
-{
-  icon: '🚧',
-  style: {
-    borderRadius: '8px',
-    background: '#27272a',
-    color: '#fff',
-  },
-}
-);
+// const notify = () => toast('Under Developement!',
+// {
+//   icon: '🚧',
+//   style: {
+//     borderRadius: '8px',
+//     background: '#27272a',
+//     color: '#fff',
+//   },
+// }
+// );
 
 const Navigation = () => {
   const value = useSelector(selectNav);
@@ -92,15 +92,19 @@ const Navigation = () => {
           // Default options for specific types
         }}
       />
+      <Link href='/resume.pdf' download={'resume'}>
       <button
-        onClick={notify}
-        className='flex p-2 px-2.5 justify-center items-center rounded-md bg-zinc-200/10 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto '
-      >
-        <BsFillLightningChargeFill
-          className='text-zinc-200 animate-pulse '
+        // onClick={notify}
+        className='flex gap-1 p-2 px-2.5 justify-center items-center rounded-md bg-zinc-200/10 text-zinc-400 hover:text-neutral-100 shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto  '
+        >
+        <BsLink45Deg
+          className=''
           size={20}
-        />
+          />
+          <div className="hidden md:flex font-medium ease-linear duration-100 font-noto "> Resume </div>
+          
       </button>
+          </Link>
     </div>
   );
 };
