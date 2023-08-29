@@ -17,6 +17,7 @@ const Home: NextPage = () => {
   }, []);
 
   if (showAnimation) {
+    
     return (
       <div className={``}>
         <Head>
