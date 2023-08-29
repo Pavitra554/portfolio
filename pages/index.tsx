@@ -13,7 +13,7 @@ const Home: NextPage = () => {
   React.useEffect(() => {
     setTimeout(() => {
       setShowAnimation(false);
-    }, 2500);
+    }, 1000);
   }, []);
 
   if (showAnimation) {

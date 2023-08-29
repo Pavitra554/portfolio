@@ -4,7 +4,7 @@ import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 //React Spinner
-import BarLoader from "react-spinners/BarLoader";
+import PulseLoader from "react-spinners/PulseLoader";
 
 //React Icons
 import {BsFillLightningChargeFill} from 'react-icons/bs';
@@ -25,9 +25,9 @@ const LoadingAnimation = () => {
           {/* "Make it work, Make it right, Make it fast ⚡" */}
         </div>
         <div>
-          <BarLoader
-            height={6}
-            width={120}
+          <PulseLoader
+            // height={6}
+            // width={120}
             className='rounded-full m-4'
             color='#c4c4cc'
           />
