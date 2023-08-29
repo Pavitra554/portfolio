@@ -8,8 +8,6 @@ import { selectTheme } from "../reducers/themeSlice";
 import { motion } from "framer-motion";
 import Footer from "../components/Footer/Footer";
 
-//vercel analytics
-import { Analytics } from '@vercel/analytics/react';
 
 
 const Container = ({ children }: any) => {
@@ -29,8 +27,6 @@ const Container = ({ children }: any) => {
         <meta name="author" content="Pavitra Behara"></meta>
         <meta name="keywords" content="Pavitra,pavitra554,pavitra.ts,Development,Android Development,Web Development, portfolio,TailwindCSS,React.js,react,github, Next.js,Redux,Framer Motion, projects, skills"></meta>
       </Head>
-      <Analytics />
-
       <NavBar />
       {children}
       <Footer/>
