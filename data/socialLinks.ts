@@ -13,12 +13,8 @@ export const SOCIAL_DATA: linkType[] = [
     name: "Leetcode",
   },
   {
-    link: "https://www.hackerrank.com/pavitra_Behara?hr_r=1",
-    name: "Hackerrank",
-  },
-  {
-    link: "https://twitter.com/pavitra_ts",
-    name: "Twitter",
+    link: "https://x.com/pavitra_ts",
+    name: "X",
   },
   {
     link: "https://www.linkedin.com/in/pavitra-behara/",

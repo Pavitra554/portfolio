@@ -4,7 +4,9 @@ import Link from "next/link";
 import { AnimatePresence, useAnimation, motion } from "framer-motion";
 
 //React Icons
-import { SiLeetcode,SiGithub,SiLinkedin,SiTwitter,SiGmail,SiHackerrank} from "react-icons/si";
+import { SiLeetcode,SiGithub,SiLinkedin,SiTwitter,SiGmail} from "react-icons/si";
+import { RiTwitterXLine} from "react-icons/ri";
+
 
 type props = {
   link: string;
@@ -32,11 +34,10 @@ const SocialButton: React.FC<props> = ({ link, name }) => {
       >
         <motion.div className='flex flex-row items-center p-2 rounded-md bg-[#27272a] text-[#b0b0b9] shadow-md select-none hover:brightness-150 active:scale-90 ease-linear duration-100 cursor-pointer font-noto'>
           <motion.div layout>
-            { name === 'Hackerrank' && <SiHackerrank size={20} /> }
             { name === 'Leetcode' && <SiLeetcode size={20} /> }
             { name === 'Github' && <SiGithub size={20} /> }
             { name === 'LinkedIn' && <SiLinkedin size={20} /> }
-            { name === 'Twitter' && <SiTwitter size={20} /> }
+            { name === 'X' && <RiTwitterXLine size={20} /> }
             { name === 'Mail' && <SiGmail size={20} /> }
           </motion.div>
           <AnimatePresence>
