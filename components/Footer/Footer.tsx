@@ -22,7 +22,7 @@ const Footer = () => {
               target='_blank'
             >
               <span className='text-[#c4c4cc] pl-1 hover:text-zinc-100 italic ease-linear duration-100'>
-                @Pavitra
+                Pavitra
               </span>
             </Link>
           </div>

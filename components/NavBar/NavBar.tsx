@@ -13,6 +13,8 @@ import SocialButtonNormal from "../Buttons/SocialButtonNormal";
 
 //Profile Picture
 import me from "../../public/me.jpg";
+import HighText from "../About/HighText";
+import Link from "next/link";
 
 const NavBar = () => {
   return (
@@ -25,12 +27,15 @@ const NavBar = () => {
             <div className='rounded-full overflow-hidden'>
               <Image src={me} alt='' height={56} width={56} />
             </div>
-            <div className="">
+            <div className=''>
               <div className='text-neutral-100 text-3xl font-semibold'>
                 Pavitra Behara
               </div>
               <div className='text-[#6e6e78] text-sm tracking-wider leading-1 font-mono'>
-                Full Stack Developer
+                SDE Intern -{" "}
+                <Link href={"https://www.autodesk.in/"} target='_blank'>
+                  <HighText>Autodesk</HighText>
+                </Link>
               </div>
             </div>
           </div>
