@@ -5,9 +5,10 @@ import { motion, AnimatePresence } from "framer-motion";
 
 //React Spinner
 import PulseLoader from "react-spinners/PulseLoader";
+import { BarLoader } from "react-spinners";
 
 //React Icons
-import {BsFillLightningChargeFill} from 'react-icons/bs';
+import { BsFillLightningChargeFill } from "react-icons/bs";
 
 const LoadingAnimation = () => {
   return (
@@ -20,17 +21,15 @@ const LoadingAnimation = () => {
         className='h-screen flex flex-col justify-center items-center font-noto'
       >
         <div className='flex flex-row items-center italic text-base md:text-xl text-center text-[#c4c4cc] select-nones'>
-          Learning in Lightning speed <BsFillLightningChargeFill className="ml-2 text-[#3ddc84]" size={20}/>
-          
+          Learning in Lightning speed{" "}
+          <BsFillLightningChargeFill
+            className='ml-2 text-[#3ddc84]'
+            size={20}
+          />
           {/* "Make it work, Make it right, Make it fast ⚡" */}
         </div>
         <div>
-          <PulseLoader
-            // height={6}
-            // width={120}
-            className='rounded-full m-4'
-            color='#c4c4cc'
-          />
+          <BarLoader height={6} width={120} className='m-4' color='#c4c4cc' />
         </div>
       </motion.div>
     </AnimatePresence>
