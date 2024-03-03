@@ -29,7 +29,12 @@ const LoadingAnimation = () => {
           {/* "Make it work, Make it right, Make it fast ⚡" */}
         </div>
         <div>
-          <BarLoader height={6} width={120} className='m-4' color='#c4c4cc' />
+          <BarLoader
+            height={6}
+            width={120}
+            className=' rounded-full m-4'
+            color='#c4c4cc'
+          />
         </div>
       </motion.div>
     </AnimatePresence>
