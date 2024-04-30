@@ -19,10 +19,10 @@ export const work_exp: workTypes[] = [
     description: "",
     tags: ["SDE", "Internship"],
     points: [
-      "Developing a system that automatically gathers data from SaaS products managed by the SAM team, and insights including renewal recommendations. Leveraging APIs, machine learning or AI tools, the system will provide valuable information to improve user engagement and retention.",
+      "Developing a system which gathers usage data on products managed by the SAM team, and generates insights, including renewal recommendations and notify stakeholder about over usage. This will provide the stakeholders visibility into software license insights and help the team to achieve cost saving avoid overages etc",
       "Working on creating backend using FastAPI, PostgreSQL and Data Pulling from different product APIs. Which also includes data cleaning, data convertion and storage.",
       "Working on frontend (dashboard) using Next.js and Typescript.",
-      "Working on ML models for recommendations and insights generation.",
+      "Deployed the backend system on AWS EC2 instance.",
     ],
   },
   {
