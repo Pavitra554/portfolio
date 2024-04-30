@@ -32,6 +32,7 @@ import github from "../../public/img/tools/github.png";
 import postman from "../../public/img/tools/postman.png";
 import vsc from "../../public/img/tools/vsc.png";
 import vercel from "../../public/img/tools/vercel.png";
+import ec2 from "../../public/img/tools/ec2.svg";
 
 const TechStack = () => {
   return (
@@ -67,6 +68,11 @@ const TechStack = () => {
         <div className='flex flex-row flex-wrap pt-1 pb-3'>
           <Badge link={mb} text='MongoDB' />
           <Badge link={postgres} text='PostgreSQL' />
+        </div>
+        <div className='text-[#7d7d85]'>Cloud / Deployment</div>
+        <div className='flex flex-row flex-wrap pt-1 pb-3'>
+          <Badge link={ec2} text='AWS EC2' />
+          <Badge link={vercel} text='Vercel' />
           <Badge link={fb} text='Firebase' />
         </div>
         <div className='text-[#7d7d85]'>Developer Tool's</div>
@@ -74,7 +80,6 @@ const TechStack = () => {
           <Badge link={git} text='Git' />
           <Badge link={github} text='GitHub' />
           <Badge link={vsc} text='VsCode' />
-          <Badge link={vercel} text='Vercel' />
           <Badge link={postman} text='Postman' />
           <Badge link={expo} text='Expo' />
           <Badge link={figma} text='Figma' />
