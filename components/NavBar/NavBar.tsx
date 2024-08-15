@@ -32,7 +32,7 @@ const NavBar = () => {
                 Pavitra Behara
               </div>
               <div className='text-[#6e6e78] text-sm tracking-wider leading-1 font-mono'>
-                SDE Intern -{" "}
+                Software Engineer -{" "}
                 <Link href={"https://www.autodesk.in/"} target='_blank'>
                   <HighText>Autodesk</HighText>
                 </Link>
