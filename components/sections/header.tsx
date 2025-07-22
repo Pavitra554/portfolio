@@ -16,15 +16,15 @@ import {
 import Link from 'next/link';
 import * as React from 'react';
 import { toast } from 'sonner';
+import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
 
 export default function Header() {
-  const [copied, setCopied] = React.useState(false);
+  const { copied, copyToClipboard } = useCopyToClipboard();
 
   const handleCopyEmail = async () => {
-    await navigator.clipboard.writeText('pavitraredmi@gmail.com');
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1200);
-    toast('Email copied to clipboard');
+    const email = 'pavitraredmi@gmail.com';
+    const success = await copyToClipboard(email);
+    toast(success ? 'Email copied to clipboard' : 'Failed to copy email');
   };
 
   return (
