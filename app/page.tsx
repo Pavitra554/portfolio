@@ -1,9 +1,13 @@
-import { ThemeToggle } from '@/components/theme-toggle';
+import About from '@/components/sections/about';
+import Header from '@/components/sections/header';
+import Me from '@/components/sections/me';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <ThemeToggle />
+    <div className="max-w-screen-sm w-full">
+      <Header />
+      <Me />
+      <About />
     </div>
   );
 }
