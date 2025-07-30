@@ -31,9 +31,7 @@ export default function Header() {
     <div className="w-full flex flex-row justify-between items-center border border-dashed p-4">
       <div className="flex flex-row items-center gap-1 text-sm text-muted-foreground select-none">
         <PiMapPinDuotone size={16} />
-        <div className="text-sm font-medium font-sans tracking-wider">
-          India
-        </div>
+        <div className="text-sm font-medium tracking-wider">India</div>
       </div>
       <div className="flex flex-row items-center gap-1 text-sm text-muted-foreground">
         <Tooltip>
