@@ -1,5 +1,11 @@
 import Link from 'next/link';
 import { SiAutodesk } from 'react-icons/si';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 type experience = {
   icon: React.ReactNode;
@@ -9,7 +15,9 @@ type experience = {
   title: string;
   description: string;
   points: string[];
+  isOpenByDefault?: boolean;
 };
+
 export default function ExpCard({
   icon,
   link,
@@ -18,6 +26,7 @@ export default function ExpCard({
   title,
   description,
   points,
+  isOpenByDefault = false,
 }: experience) {
   return (
     <div className="w-full flex flex-row gap-2">
@@ -26,21 +35,34 @@ export default function ExpCard({
           {icon}
         </div>
       </Link>
-      <div className="flex flex-col items-start justify-center gap-4">
-        <div className="font-sans font-medium">
-          <div>{title}</div>
-          <div className="text-sm tracking-wider text-muted-foreground">
-            {companyname} • {time}
-          </div>
-        </div>
-        <div className="text-muted-foreground flex flex-col gap-3 ">
-          <div>{description}</div>
-          <ul className="list-disc pl-4 flex flex-col gap-3">
-            {points.map((e, i) => (
-              <li key={i}>{e}</li>
-            ))}
-          </ul>
-        </div>
+      <div className="flex flex-col items-start justify-center gap-4 w-full">
+        <Accordion
+          type="single"
+          collapsible
+          className="w-full"
+          defaultValue={isOpenByDefault ? 'experience-details' : undefined}
+        >
+          <AccordionItem value="experience-details" className="border-none">
+            <AccordionTrigger className="py-0 hover:no-underline cursor-pointer">
+              <div className=" font-medium text-left">
+                <div>{title}</div>
+                <div className="text-sm tracking-wider text-muted-foreground">
+                  {companyname} • {time}
+                </div>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="text-muted-foreground text-base mt-4">
+              <div className="flex flex-col gap-3">
+                <div>{description}</div>
+                <ul className="list-disc pl-4 flex flex-col gap-3">
+                  {points.map((e, i) => (
+                    <li key={i}>{e}</li>
+                  ))}
+                </ul>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </div>
     </div>
   );

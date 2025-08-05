@@ -10,6 +10,7 @@ type experience = {
   title: string;
   description: string;
   points: string[];
+  isOpenByDefault?: boolean;
 };
 
 export default function Experience() {
@@ -27,6 +28,7 @@ export default function Experience() {
         'Helped build a centralized portal for accessing third-party services, with smart search, filtering, and categorization to improve discoverability and decision-making.',
         'Supported the development of a survey system to assess application maturity, enhance data flow clarity, and provide actionable insights via visual summaries.',
       ],
+      isOpenByDefault: true,
     },
     {
       icon: <SiAutodesk size={24} />,
@@ -82,6 +84,7 @@ export default function Experience() {
             title={e.title}
             description={e.description}
             points={e.points}
+            isOpenByDefault={e.isOpenByDefault || false}
           />
         ))}
       </div>
