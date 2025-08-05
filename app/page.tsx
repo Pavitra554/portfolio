@@ -13,7 +13,7 @@ import { ProgressiveBlur } from '@/components/magicui/progressive-blur';
 export default function Home() {
   return (
     <div className=" max-w-screen-sm w-full selection:bg-zinc-300 dark:selection:bg-zinc-700">
-      <ScrollArea className="relative h-screen overflow-hidden scrollbar-hide">
+      <ScrollArea className="relative h-screen overflow-hidden">
         <BlurFade delay={0.1} inView>
           <Header />
         </BlurFade>
