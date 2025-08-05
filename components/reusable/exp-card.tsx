@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { SiAutodesk } from 'react-icons/si';
 import {
   Accordion,
   AccordionContent,
