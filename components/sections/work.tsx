@@ -23,7 +23,10 @@ export default function Work() {
 
         <div className=" h-full w-full flex flex-col sm:flex-row gap-4">
           {WORK_IMAGES.map((image, index) => (
-            <div className="h-60 w-full border border-dashed bg-muted dark:bg-zinc-900 z-10 rounded-xl overflow-hidden">
+            <div
+              key={index}
+              className="h-60 w-full border border-dashed bg-muted dark:bg-zinc-900 z-10 rounded-xl overflow-hidden"
+            >
               <Image
                 key={index}
                 src={image}

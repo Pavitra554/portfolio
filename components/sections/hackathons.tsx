@@ -1,16 +1,5 @@
 import { HACKATHONS } from '@/lib/constants';
 import ExpCard from '../reusable/exp-card';
-import { SiAutodesk } from 'react-icons/si';
-
-type hackathons = {
-  icon: React.ReactNode;
-  link: string;
-  companyname: string;
-  time: string;
-  title: string;
-  description: string;
-  points: string[];
-};
 
 export default function Hackathons() {
   return (
