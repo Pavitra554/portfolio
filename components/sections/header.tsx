@@ -17,13 +17,13 @@ import Link from 'next/link';
 import * as React from 'react';
 import { toast } from 'sonner';
 import { useCopyToClipboard } from '@/hooks/useCopyToClipboard';
+import { SOCIAL_LINKS } from '@/lib/constants';
 
 export default function Header() {
   const { copied, copyToClipboard } = useCopyToClipboard();
 
   const handleCopyEmail = async () => {
-    const email = 'pavitraredmi@gmail.com';
-    const success = await copyToClipboard(email);
+    const success = await copyToClipboard(SOCIAL_LINKS.email);
     toast(success ? 'Email copied to clipboard' : 'Failed to copy email');
   };
 
@@ -54,7 +54,7 @@ export default function Header() {
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
-              href="https://github.com/Pavitra554"
+              href={SOCIAL_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -74,7 +74,7 @@ export default function Header() {
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
-              href="https://www.linkedin.com/in/pavitra-behara/"
+              href={SOCIAL_LINKS.linkedin}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -94,7 +94,7 @@ export default function Header() {
         <Tooltip>
           <TooltipTrigger asChild>
             <Link
-              href="https://x.com/pavitrabehara"
+              href={SOCIAL_LINKS.twitter}
               target="_blank"
               rel="noopener noreferrer"
             >

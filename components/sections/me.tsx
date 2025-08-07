@@ -3,6 +3,7 @@ import { GridPattern } from '../magicui/grid-pattern';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { PiArrowUpRight } from 'react-icons/pi';
+import { PERSONAL_INFO } from '@/lib/constants';
 
 export default function Me() {
   return (
@@ -19,23 +20,23 @@ export default function Me() {
       />
       <div className="flex flex-col items-center justify-center rounded-2xl bg-muted dark:bg-zinc-900 z-10 border border-dashed">
         <Image
-          src="/me.png"
-          alt="Picture of the author"
+          src={PERSONAL_INFO.profileImage}
+          alt={PERSONAL_INFO.name}
           width={80}
           height={80}
         />
       </div>
       <div className="flex flex-col items-center justify-center text-center">
-        <div className="font-semibold text-xl">Pavitra Behara</div>
+        <div className="font-semibold text-xl">{PERSONAL_INFO.name}</div>
         <div className="font-medium text-muted-foreground ml-4">
-          Software Engineer{' '}
+          {PERSONAL_INFO.title}{' '}
           <span className="inline-flex items-center group">
             <Link
               href="https://www.autodesk.com/"
               target="_blank"
               className="inline-flex items-center gap-[2px] relative hover:text-zinc-950 dark:hover:text-zinc-50 transition-colors"
             >
-              @Autodesk
+              @{PERSONAL_INFO.company}
               <span className="inline-flex transform -translate-x-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-200">
                 <PiArrowUpRight size={18} />
               </span>
