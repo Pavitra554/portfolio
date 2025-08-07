@@ -1,6 +1,10 @@
 import { SiAutodesk } from 'react-icons/si';
 import Image from 'next/image';
-import { PiCodeDuotone, PiTrophyDuotone } from 'react-icons/pi';
+import {
+  PiCodeDuotone,
+  PiLaptopDuotone,
+  PiTrophyDuotone,
+} from 'react-icons/pi';
 
 // Personal Information
 export const PERSONAL_INFO = {
@@ -52,6 +56,21 @@ export const EXPERIENCE = [
       'Deployed backend on AWS EC2 and handled data processing for stakeholder-facing dashboards',
     ],
   },
+  {
+    icon: <PiLaptopDuotone size={24} />, // You can use any relevant icon from react-icons
+    link: '',
+    companyname: 'Freelance',
+    time: 'Jan 2023 - Oct 2023',
+    title: 'Freelance Developer',
+    description:
+      'Worked as a freelance developer on multiple contract-based projects, delivering end-to-end solutions across web, backend, and mobile platforms.',
+    points: [
+      'Developed and deployed backend services using Python and REST APIs for data processing and automation tasks.',
+      'Built cross-platform mobile applications using React Native, delivering smooth UI/UX and performance on both Android and iOS.',
+      'Delivered full-stack web applications with dynamic and complex frontend interfaces using Next.js, and Tailwind CSS.',
+    ],
+  },
+
   {
     icon: (
       <Image
