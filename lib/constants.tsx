@@ -1,5 +1,6 @@
 import { SiAutodesk } from 'react-icons/si';
 import Image from 'next/image';
+import { PiCodeDuotone, PiTrophyDuotone } from 'react-icons/pi';
 
 // Personal Information
 export const PERSONAL_INFO = {
@@ -77,13 +78,31 @@ export const EXPERIENCE = [
 // Hackathons Data
 export const HACKATHONS = [
   {
-    icon: <SiAutodesk size={24} />,
-    link: 'href',
+    icon: <PiCodeDuotone size={18} />,
+    link: 'https://devfolio.co/projects/flowlinks-8676',
+    companyname: 'Flow Hackathon by Flow',
+    time: 'Mar 2023',
+    title: `Built Flowlinks`,
+    description: `Own & Showcase all your links at one place , powered by NFTs on Flow Blockchain..`,
+    points: [],
+  },
+  {
+    icon: <PiTrophyDuotone size={18} />,
+    link: 'https://devfolio.co/projects/svaasthy-4e9c',
     companyname: 'Electrothon 4.0 by NIT Hamirpur',
     time: 'Feb 2022',
     title: 'Winner under Pandemic Theme',
     description:
       'Built "Svaasthy", Which enables us to ease up the emergency medical situations by providing the best and the fastest way to reach your nearest hospitals or medical centers.',
+    points: [],
+  },
+  {
+    icon: <PiTrophyDuotone size={18} />,
+    link: 'https://devfolio.co/projects/mentally-e08e',
+    companyname: 'HackOdisha by NIT Rourkela',
+    time: 'Sept 2021',
+    title: `Winner under Best Beginner's Team`,
+    description: `Built “Ment-Ally”, Which help's people to gain mental peace and stability.`,
     points: [],
   },
 ];
