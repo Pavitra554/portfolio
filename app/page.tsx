@@ -3,9 +3,11 @@
 import { BlurFade } from '@/components/magicui/blur-fade';
 import About from '@/components/sections/about';
 import Experience from '@/components/sections/experience';
+import Gear from '@/components/sections/gear';
 import Hackathons from '@/components/sections/hackathons';
 import Header from '@/components/sections/header';
 import Me from '@/components/sections/me';
+import Stack from '@/components/sections/stack';
 import Work from '@/components/sections/work';
 
 export default function Home() {
@@ -28,6 +30,12 @@ export default function Home() {
       </BlurFade>
       <BlurFade delay={0.1} inView>
         <Hackathons />
+      </BlurFade>
+      <BlurFade delay={0.1} inView>
+        <Stack />
+      </BlurFade>
+      <BlurFade delay={0.1} inView>
+        <Gear />
       </BlurFade>
     </div>
   );
