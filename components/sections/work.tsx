@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '../ui/button';
 import { PiGithubLogoDuotone } from 'react-icons/pi';
 import { WORK_IMAGES } from '@/lib/constants';
+import Link from 'next/link';
 
 export default function Work() {
   return (
@@ -39,14 +40,16 @@ export default function Work() {
           ))}
         </div>
         <div className="flex justify-end">
-          <Button
-            variant="outline"
-            size="sm"
-            className="cursor-pointer border-dashed dark:bg-zinc-950"
-          >
-            Explore more on
-            <PiGithubLogoDuotone size={16} />
-          </Button>
+          <Link href={'https://github.com/Pavitra554'} target="_blank">
+            <Button
+              variant="outline"
+              size="sm"
+              className="cursor-pointer border-dashed dark:bg-zinc-950"
+            >
+              Explore more on
+              <PiGithubLogoDuotone size={16} />
+            </Button>
+          </Link>
         </div>
       </div>
     </div>

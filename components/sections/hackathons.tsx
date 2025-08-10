@@ -18,6 +18,7 @@ export default function Hackathons() {
             title={e.title}
             description={e.description}
             points={e.points}
+            isOpenByDefault={e.isOpenByDefault}
           />
         ))}
       </div>

@@ -57,17 +57,17 @@ export const EXPERIENCE = [
     ],
   },
   {
-    icon: <PiLaptopDuotone size={24} />, // You can use any relevant icon from react-icons
-    link: '',
+    icon: <PiLaptopDuotone className="text-accent-foreground/50" size={24} />, // You can use any relevant icon from react-icons
+    link: '/',
     companyname: 'Freelance',
     time: 'Jan 2023 - Oct 2023',
     title: 'Freelance Developer',
     description:
       'Worked as a freelance developer on multiple contract-based projects, delivering end-to-end solutions across web, backend, and mobile platforms.',
     points: [
-      'Developed and deployed backend services using Python and REST APIs for data processing and automation tasks.',
-      'Built cross-platform mobile applications using React Native, delivering smooth UI/UX and performance on both Android and iOS.',
       'Delivered full-stack web applications with dynamic and complex frontend interfaces using Next.js, and Tailwind CSS.',
+      'Built cross-platform mobile applications using React Native, delivering smooth UI/UX and performance on both Android and iOS.',
+      'Developed and deployed backend services using Python and REST APIs for data processing and automation tasks.',
     ],
   },
 
@@ -88,7 +88,7 @@ export const EXPERIENCE = [
       'Contributed to UI development and issue resolution across frontend projects.',
     points: [
       'Built 8+ responsive UI pages and reusable components based on design specs.',
-      `Fix'ed 50+ UI bugs and participated in code reviews to improve code quality.`,
+      `Fixed 50+ UI bugs and participated in code reviews to improve code quality.`,
       `Tech Stack: Next.js, TypeScript, React.js, Tailwind CSS`,
     ],
   },
@@ -97,16 +97,17 @@ export const EXPERIENCE = [
 // Hackathons Data
 export const HACKATHONS = [
   {
-    icon: <PiCodeDuotone size={18} />,
+    icon: <PiCodeDuotone className="text-accent-foreground/50" size={18} />,
     link: 'https://devfolio.co/projects/flowlinks-8676',
     companyname: 'Flow Hackathon by Flow',
     time: 'Mar 2023',
     title: `Built Flowlinks`,
     description: `Own & Showcase all your links at one place , powered by NFTs on Flow Blockchain..`,
     points: [],
+    isOpenByDefault: true,
   },
   {
-    icon: <PiTrophyDuotone size={18} />,
+    icon: <PiTrophyDuotone className="text-accent-foreground/50" size={18} />,
     link: 'https://devfolio.co/projects/svaasthy-4e9c',
     companyname: 'Electrothon 4.0 by NIT Hamirpur',
     time: 'Feb 2022',
@@ -114,15 +115,17 @@ export const HACKATHONS = [
     description:
       'Built "Svaasthy", Which enables us to ease up the emergency medical situations by providing the best and the fastest way to reach your nearest hospitals or medical centers.',
     points: [],
+    isOpenByDefault: false,
   },
   {
-    icon: <PiTrophyDuotone size={18} />,
+    icon: <PiTrophyDuotone className="text-accent-foreground/50" size={18} />,
     link: 'https://devfolio.co/projects/mentally-e08e',
     companyname: 'HackOdisha by NIT Rourkela',
     time: 'Sept 2021',
     title: `Winner under Best Beginner's Team`,
-    description: `Built “Ment-Ally”, Which help's people to gain mental peace and stability.`,
+    description: `Built “Ment-Ally”, Which helps people to gain mental peace and stability.`,
     points: [],
+    isOpenByDefault: false,
   },
 ];
 

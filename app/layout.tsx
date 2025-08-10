@@ -21,14 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable}`}>
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} antialiased font-sans`}>
-        <div className="h-full w-screen flex flex-col items-center justify-center ">
+        <div className="h-full w-screen flex flex-col items-center justify-center">
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
+            storageKey="portfolio-theme"
           >
             <Toaster />
             {children}

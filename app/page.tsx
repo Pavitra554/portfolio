@@ -2,6 +2,7 @@
 
 import { BlurFade } from '@/components/magicui/blur-fade';
 import About from '@/components/sections/about';
+import Connect from '@/components/sections/connect';
 import Experience from '@/components/sections/experience';
 import Gear from '@/components/sections/gear';
 import Hackathons from '@/components/sections/hackathons';
@@ -36,6 +37,9 @@ export default function Home() {
       </BlurFade>
       <BlurFade delay={0.1} inView>
         <Gear />
+      </BlurFade>
+      <BlurFade delay={0.1} inView>
+        <Connect />
       </BlurFade>
     </div>
   );

@@ -24,17 +24,17 @@ export default function Gear() {
         <div className="flex flex-row gap-2 items-center">
           <SiApple size={18} />
           <div> iPhone 15</div>
-          <div className="text-muted-foreground"> (Personal)</div>
-        </div>
-        <div className="flex flex-row gap-2 items-center">
-          <FaPlaystation size={18} />
-          <div> Playstation 5</div>
-          <div className="text-muted-foreground"> (Gaming Console)</div>
+          <div className="text-muted-foreground"></div>
         </div>
         <div className="flex flex-row gap-2 items-center">
           <PiMonitorFill size={18} />
           <div> MSI G274QPF E2</div>
-          <div className="text-muted-foreground"> (Monitor)</div>
+          <div className="text-muted-foreground"></div>
+        </div>
+        <div className="flex flex-row gap-2 items-center">
+          <FaPlaystation size={18} />
+          <div> Playstation 5</div>
+          <div className="text-muted-foreground"></div>
         </div>
         <div className="flex flex-row gap-2 items-center">
           <FaHeadphones size={18} />
