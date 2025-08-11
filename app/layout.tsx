@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} antialiased font-sans`}>
-        <div className="h-full w-screen flex flex-col items-center justify-center">
+        <div className="h-full w-full flex flex-col items-center justify-center">
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
