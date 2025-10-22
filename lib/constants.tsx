@@ -38,6 +38,7 @@ export const EXPERIENCE = [
       'Working on internal platforms that drive automation, improve operational efficiency, and support data-informed decisions across teams.',
     points: [
       'Contributed to the development of an internal platform that automates software license provisioning and deprovisioning across teams. Helped reduce manual effort and cost by up to 90% by streamlining workflows and eliminating redundant product assignments. Delivered insights through dynamic usage analytics and role-based dashboards.',
+      'Contributed to vendor reconciliation platform, developing Python ETL pipeline, GraphQL API with Snowflake integration, stored procedures with dynamic filtering, Azure OpenAI validation.',
       'Helped build a centralized self-service portal for accessing third-party services, with smart search, filtering, and categorization to improve discoverability and decision-making.',
       'Supported the development of a survey system to assess application maturity, enhance data flow clarity, and provide actionable insights.',
     ],
