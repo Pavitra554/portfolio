@@ -13,7 +13,7 @@ export const PERSONAL_INFO = {
   company: 'Autodesk',
   companyUrl: 'https://www.autodesk.com/',
   location: 'India',
-  email: 'pavitraredmi@gmail.com',
+  email: 'pavitrabehara56@gmail.com',
   about: `Hey there, I'm Pavitra — a developer who codes with instinct, flow, and a bit of vibecoding. I'm currently diving into complex backend systems, AI, cloud infrastructure, and LLMs. In my downtime, you'll find me grinding on the PS5.`,
   profileImage: '/me.png',
 };
