@@ -23,7 +23,7 @@ export const SOCIAL_LINKS = {
   github: 'https://github.com/Pavitra554',
   linkedin: 'https://www.linkedin.com/in/pavitra-behara/',
   twitter: 'https://x.com/pavitrabehara',
-  email: 'pavitraredmi@gmail.com',
+  email: 'pavitrabehara56@gmail.com',
 };
 
 // Experience Data
